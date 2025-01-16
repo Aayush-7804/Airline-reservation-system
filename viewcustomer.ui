@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewCustomer</class>
+ <widget class="QWidget" name="ViewCustomer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1015</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 0, 0);</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: #f0f0f0;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-image: url(:/ing/ViewCustImg.png);
+background-repeat: no-repeat;
+background-position: center;
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QFrame" name="frame_2">
+        <property name="maximumSize">
+         <size>
+          <width>1154</width>
+          <height>554</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:none;
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">border:none;
+font: 10pt &quot;Segoe UI&quot;;
+background:none;
+color: rgb(0,0,0);</string>
+           </property>
+           <property name="text">
+            <string>Enter Customer ID</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QPushButton" name="Delete_Customer">
+           <property name="minimumSize">
+            <size>
+             <width>93</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>93</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background:none;
+}
+
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string>Delete</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QPushButton" name="Add_Customer">
+           <property name="minimumSize">
+            <size>
+             <width>104</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>104</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background:none;
+}
+
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string>Add Customer</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="7">
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="styleSheet">
+            <string notr="true">QTableWidget {
+    gridline-color: #c0c0c0;
+    alternate-background-color: #f0f0f0;
+}
+QHeaderView::section {
+    background-color: #d9d9d9;
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+}
+/* Scrollbar background */
+QTableWidget QScrollBar:vertical, QTableView QScrollBar:vertical {
+    border: none;
+    background: #f1f1f1;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* Handle */
+QTableWidget QScrollBar::handle:vertical, QTableView QScrollBar::handle:vertical {
+    background: #888;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+/* Handle hover */
+QTableWidget QScrollBar::handle:vertical:hover, QTableView QScrollBar::handle:vertical:hover {
+    background: #555;
+}
+
+/* Add button (down arrow) */
+QTableWidget QScrollBar::add-line:vertical, QTableView QScrollBar::add-line:vertical {
+    border: none;
+    background: #f1f1f1;
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+/* Subtract button (up arrow) */
+QTableWidget QScrollBar::sub-line:vertical, QTableView QScrollBar::sub-line:vertical {
+    border: none;
+    background: #f1f1f1;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+/* Bottom of the scroll bar */
+QTableWidget QScrollBar::add-page:vertical, QTableView QScrollBar::add-page:vertical, 
+QTableWidget QScrollBar::sub-page:vertical, QTableView QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/* Horizontal scrollbar */
+QTableWidget QScrollBar:horizontal, QTableView QScrollBar:horizontal {
+    border: none;
+    background: #f1f1f1;
+    height: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+QTableWidget QScrollBar::handle:horizontal, QTableView QScrollBar::handle:horizontal {
+    background: #888;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QTableWidget QScrollBar::handle:horizontal:hover, QTableView QScrollBar::handle:horizontal:hover {
+    background: #555;
+}
+
+QTableWidget QScrollBar::add-line:horizontal, QTableView QScrollBar::add-line:horizontal {
+    border: none;
+    background: #f1f1f1;
+    width: 0px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QTableWidget QScrollBar::sub-line:horizontal, QTableView QScrollBar::sub-line:horizontal {
+    border: none;
+    background: #f1f1f1;
+    width: 0px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QTableWidget QScrollBar::add-page:horizontal, QTableView QScrollBar::add-page:horizontal, 
+QTableWidget QScrollBar::sub-page:horizontal, QTableView QScrollBar::sub-page:horizontal {
+    background: none;
+}
+</string>
+           </property>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>200</number>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>Customer ID</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>First Name</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Last Name</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Contact No</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Passport No</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>National ID</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Address</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Gender</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>DOB</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="En_CustID">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1px;
+    margin-top: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+color: rgb(0, 0, 0);
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QPushButton" name="Search">
+           <property name="minimumSize">
+            <size>
+             <width>93</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>93</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background:none;
+}
+
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+
+QPushButton:clicked {
+border : 2px solid;
+	border-color: rgb(255, 0, 0);
+	color: rgb(255, 0, 0);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Search</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="6">
+          <widget class="QPushButton" name="pushButton">
+           <property name="minimumSize">
+            <size>
+             <width>104</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>104</width>
+             <height>29</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background:none;
+}
+
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}</string>
+           </property>
+           <property name="text">
+            <string>Cancel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="minimumSize">
+         <size>
+          <width>265</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12000000</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#label_3 {
+background:none;
+    background-color: #f7f7f7; /* Light grey background */
+    color: #333333; /* Dark grey text */
+    border: 1px solid #d9d9d9; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding around the text */
+    font-size: 20px; /* Font size appropriate for the label size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 10px; /* Space below the label */
+    letter-spacing: 1px; /* Spacing between letters */
+    height: 30px; /* Explicit height for the label */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>View Customer</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

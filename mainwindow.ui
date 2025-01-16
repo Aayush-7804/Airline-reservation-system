@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">/*background-image: url(:/ing/flight-hero-1.jpg);*/</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCoustomer">
+    <property name="title">
+     <string>Customer</string>
+    </property>
+    <addaction name="actionAdd_Coustomer"/>
+   </widget>
+   <widget class="QMenu" name="menuFlight">
+    <property name="title">
+     <string>Flight</string>
+    </property>
+    <addaction name="actionAdd_Flight"/>
+    <addaction name="actionBook_Flight"/>
+   </widget>
+   <widget class="QMenu" name="menuTicket">
+    <property name="title">
+     <string>Ticket</string>
+    </property>
+    <addaction name="actionView_Ticket"/>
+   </widget>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>Admin</string>
+    </property>
+    <addaction name="actionAdd_Admin"/>
+   </widget>
+   <addaction name="menuCoustomer"/>
+   <addaction name="menuFlight"/>
+   <addaction name="menuTicket"/>
+   <addaction name="menuAdmin"/>
+  </widget>
+  <action name="actionAdd_Coustomer">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>View Customer</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionSearch_Coustomer">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Search Customer</string>
+   </property>
+  </action>
+  <action name="actionAdd_Flight">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Add Flight</string>
+   </property>
+  </action>
+  <action name="actionBook_Flight">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Book Flight</string>
+   </property>
+  </action>
+  <action name="actionView_Ticket">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>View Ticket</string>
+   </property>
+  </action>
+  <action name="actionAdd_Admin">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>profile</string>
+   </property>
+   <property name="iconText">
+    <string>Add Admin</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionhi">
+   <property name="text">
+    <string>hi</string>
+   </property>
+  </action>
+  <action name="actionih">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>ih</string>
+   </property>
+  </action>
+  <action name="asdasd">
+   <property name="text">
+    <string>hi</string>
+   </property>
+  </action>
+  <action name="actionasd">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>asd</string>
+   </property>
+  </action>
+  <action name="actionasda">
+   <property name="text">
+    <string>asda</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>on_actionasd_triggerd()</slot>
+  <slot>on_actionasda_triggerd()</slot>
+ </slots>
+</ui>

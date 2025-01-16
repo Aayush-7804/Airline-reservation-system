@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewTicket</class>
+ <widget class="QWidget" name="ViewTicket">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1224</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 0, 0);</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="styleSheet">
+      <string notr="true">background-color: #f0f0f0;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-image: url(:/ing/ViewTickImg.png);
+background-repeat: no-repeat;
+background-position: center;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="minimumSize">
+         <size>
+          <width>265</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>12000000</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#label_15 {
+background:none;
+    background-color: #f7f7f7; /* Light grey background */
+    color: #333333; /* Dark grey text */
+    border: 1px solid #d9d9d9; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding around the text */
+    font-size: 20px; /* Font size appropriate for the label size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 10px; /* Space below the label */
+    letter-spacing: 1px; /* Spacing between letters */
+    height: 30px; /* Explicit height for the label */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>View Customer</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QFrame" name="frame_3">
+        <property name="minimumSize">
+         <size>
+          <width>1154</width>
+          <height>554</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1154</width>
+          <height>554</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:none;background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0" rowspan="4">
+          <widget class="QFrame" name="frame_7">
+           <property name="minimumSize">
+            <size>
+             <width>51</width>
+             <height>511</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>51</width>
+             <height>511</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QPushButton" name="VT_GetTicket">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background:none;
+}
+
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Get Ticket</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="11" rowspan="4">
+          <widget class="QFrame" name="frame_8">
+           <property name="minimumSize">
+            <size>
+             <width>51</width>
+             <height>511</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>51</width>
+             <height>511</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="8">
+          <widget class="QPushButton" name="Cancel">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background:none;
+}
+
+QPushButton:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Cancel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="5">
+          <widget class="QLabel" name="worrning">
+           <property name="minimumSize">
+            <size>
+             <width>170</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>170</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;font: 10pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QLineEdit" name="VT_TicketID">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1px;
+    margin-top: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+color: rgb(0, 0, 0);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QLabel" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>90</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+font: 10pt &quot;Arial&quot;;
+background:none;</string>
+           </property>
+           <property name="text">
+            <string>Ticket ID</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="10">
+          <widget class="QFrame" name="frame">
+           <property name="minimumSize">
+            <size>
+             <width>1036</width>
+             <height>350</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>1036</width>
+             <height>350</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #f0f0f0;
+border: 1px solid #ccc;
+border-radius: 5px;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>220</y>
+              <width>100</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Gender</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>160</y>
+              <width>100</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>FirstName</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>30</y>
+              <width>100</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Arrival</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_6">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>100</y>
+              <width>100</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Departure</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>160</y>
+              <width>100</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Last Name</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>30</y>
+              <width>100</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Flight Name</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_FlightName">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>30</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_DOF">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>100</y>
+              <width>91</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;
+text-align:center;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_FirstName">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>160</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_Arrival">
+            <property name="geometry">
+             <rect>
+              <x>750</x>
+              <y>30</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_Departure">
+            <property name="geometry">
+             <rect>
+              <x>750</x>
+              <y>100</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_LastName">
+            <property name="geometry">
+             <rect>
+              <x>750</x>
+              <y>160</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_Gender">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>220</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>100</y>
+              <width>111</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Date of flight</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>220</y>
+              <width>100</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Contact No</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_ContactNo">
+            <property name="geometry">
+             <rect>
+              <x>750</x>
+              <y>220</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_FlightID">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>30</y>
+              <width>61</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_11">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>30</y>
+              <width>31</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>(ID)</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_12">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>160</y>
+              <width>31</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>(ID)</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_CustomerID">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>160</y>
+              <width>61</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_13">
+            <property name="geometry">
+             <rect>
+              <x>290</x>
+              <y>100</y>
+              <width>51</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string>(Time)</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_TOF">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>100</y>
+              <width>71</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;
+text-align:center;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_14">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>280</y>
+              <width>100</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Payment</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_Payment">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>280</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>600</x>
+              <y>280</y>
+              <width>101</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border:none;
+color: rgb(0, 0, 0);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Total Seats</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="VT_TotalSeats">
+            <property name="geometry">
+             <rect>
+              <x>750</x>
+              <y>280</y>
+              <width>200</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="3" column="2" colspan="3">
+          <widget class="QFrame" name="frame_4">
+           <property name="minimumSize">
+            <size>
+             <width>338</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="7" colspan="3">
+          <widget class="QFrame" name="frame_5">
+           <property name="styleSheet">
+            <string notr="true">border:none;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
